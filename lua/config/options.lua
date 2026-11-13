@@ -3,9 +3,9 @@ local opt = vim.opt
 -- UI
 opt.number = true
 opt.relativenumber = true
-opt.signcolumn = "yes"
+opt.signcolumn = 'yes'
 opt.cursorline = true
-opt.cursorlineopt = "number"
+opt.cursorlineopt = 'number'
 opt.showmode = false
 opt.laststatus = 3
 opt.cmdheight = 1
@@ -32,18 +32,18 @@ opt.hlsearch = true
 opt.incsearch = true
 
 -- Editing
-opt.mouse = "a"
+opt.mouse = 'a'
 opt.undofile = true
 opt.autowrite = true
 opt.confirm = true
-opt.virtualedit = "block"
+opt.virtualedit = 'block'
 
 -- Splits
 opt.splitright = true
 opt.splitbelow = true
 
 -- Completion
-opt.completeopt = { "menu", "menuone", "noselect" }
+opt.completeopt = { 'menu', 'menuone', 'noselect' }
 opt.pumheight = 10
 
 -- Performance / behavior
@@ -53,8 +53,8 @@ opt.redrawtime = 1000
 opt.lazyredraw = false
 
 -- Files
-opt.fileencoding = "utf-8"
-opt.encoding = "utf-8"
+opt.fileencoding = 'utf-8'
+opt.encoding = 'utf-8'
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
@@ -62,9 +62,9 @@ opt.writebackup = false
 -- Visual characters
 opt.list = true
 opt.listchars = {
-    tab = "  ",
-    trail = "·",
-    nbsp = "␣",
+    tab = '  ',
+    trail = '·',
+    nbsp = '␣',
 }
 
 -- Folding
@@ -72,4 +72,4 @@ opt.foldlevel = 99
 opt.foldlevelstart = 99
 opt.foldenable = true
 
-vim.diagnostic.config({ virtual_text = { virtual_text_pos = "inline" } })
+vim.diagnostic.config({ virtual_text = { virtual_text_pos = 'inline' } })
