@@ -1,30 +1,30 @@
 return {
     -- Telescope (Fuzzy finder.)
     {
-        "nvim-telescope/telescope.nvim",
-        version = "*",
-        cmd = "Telescope",
+        'nvim-telescope/telescope.nvim',
+        version = '*',
+        cmd = 'Telescope',
 
         dependencies = {
-            "nvim-lua/plenary.nvim",
+            'nvim-lua/plenary.nvim',
         },
 
         keys = {
-            { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-            { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
-            { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find buffers" },
-            { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
-            { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent files" },
+            { '<leader>ff', '<cmd>Telescope find_files<cr>', desc = 'Find files' },
+            { '<leader>fg', '<cmd>Telescope live_grep<cr>', desc = 'Live grep' },
+            { '<leader>fb', '<cmd>Telescope buffers<cr>', desc = 'Find buffers' },
+            { '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = 'Help tags' },
+            { '<leader>fr', '<cmd>Telescope oldfiles<cr>', desc = 'Recent files' },
         },
 
         opts = {
             defaults = {
-                sorting_strategy = "ascending",
-                layout_strategy = "horizontal",
+                sorting_strategy = 'ascending',
+                layout_strategy = 'horizontal',
 
                 layout_config = {
                     horizontal = {
-                        prompt_position = "top",
+                        prompt_position = 'top',
                         preview_width = 0.55,
                     },
 
@@ -33,8 +33,8 @@ return {
                 },
 
                 file_ignore_patterns = {
-                    "node_modules/",
-                    ".git/",
+                    'node_modules/',
+                    '.git/',
                 },
             },
         },
@@ -42,21 +42,21 @@ return {
 
     -- File explorer.
     {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        cmd = "Neotree",
+        'nvim-neo-tree/neo-tree.nvim',
+        branch = 'v3.x',
+        cmd = 'Neotree',
 
         dependencies = {
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-            "nvim-tree/nvim-web-devicons",
+            'nvim-lua/plenary.nvim',
+            'MunifTanjim/nui.nvim',
+            'nvim-tree/nvim-web-devicons',
         },
 
         keys = {
             {
-                "<leader>e",
-                "<cmd>Neotree toggle<cr>",
-                desc = "Toggle file explorer",
+                '<leader>e',
+                '<cmd>Neotree toggle<cr>',
+                desc = 'Toggle file explorer',
             },
         },
 
@@ -66,7 +66,7 @@ return {
             enable_diagnostics = false,
 
             window = {
-                position = "left",
+                position = 'left',
                 width = 30,
             },
 
@@ -82,28 +82,28 @@ return {
 
     -- Flash
     {
-        "folke/flash.nvim",
-        event = "VeryLazy",
+        'folke/flash.nvim',
+        event = 'VeryLazy',
 
         opts = {},
 
         keys = {
             {
-                "s",
-                mode = { "n", "x", "o" },
+                's',
+                mode = { 'n', 'x', 'o' },
                 function()
-                    require("flash").jump()
+                    require('flash').jump()
                 end,
-                desc = "Flash jump",
+                desc = 'Flash jump',
             },
 
             {
-                "S",
-                mode = { "n", "x", "o" },
+                'S',
+                mode = { 'n', 'x', 'o' },
                 function()
-                    require("flash").treesitter()
+                    require('flash').treesitter()
                 end,
-                desc = "Flash Treesitter",
+                desc = 'Flash Treesitter',
             },
         },
     },
